@@ -12,8 +12,8 @@ int division();//Division Calculate
 
 //variables
 int key = 0;
-int a = 0;
-int b = 0;
+long long a = 0;
+long long b = 0;
 
 int main()
 {
@@ -67,8 +67,8 @@ int addition()
 {
 	system("cls");
 	printf("Enter 2 number:");
-	scanf_s("%d%d", &a, &b);
-	printf("\n\n%d", a + b);
+	scanf_s("%lld%lld", &a, &b);
+	printf("\n\n%lld", a + b);
 	Sleep(2000);
 	main_page();
 	return 0;
@@ -78,8 +78,8 @@ int subtraction()
 {
 	system("cls");
 	printf("Enter 2 number:");
-	scanf_s("%d%d", &a, &b);
-	printf("\n\n%d", a - b);
+	scanf_s("%lld%lld", &a, &b);
+	printf("\n\n%lld", a - b);
 	Sleep(2000);
 	main_page();
 	return 0;
@@ -89,8 +89,8 @@ int multiplication()
 {
 	system("cls");
 	printf("Enter 2 number:");
-	scanf_s("%d%d", &a, &b);
-	printf("\n\n%d", a * b);
+	scanf_s("%lld%lld", &a, &b);
+	printf("\n\n%lld", a * b);
 	Sleep(2000);
 	main_page();
 	return 0;
@@ -100,8 +100,8 @@ int division()
 {
 	system("cls");
 	printf("Enter 2 number:");
-	scanf_s("%d%d", &a, &b);
-	printf("\n\n%d", a / b);
+	scanf_s("%lld%lld", &a, &b);
+	printf("\n\n%lld and Remainder: %lld", a / b, a % b);
 	Sleep(2000);
 	main_page();
 	return 0;
