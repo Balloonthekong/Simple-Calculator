@@ -9,6 +9,7 @@ int addition();//Addition Calculate
 int subtraction();//Subtraction Calculate
 int multiplication();//Multiplication Calculate
 int division();//Division Calculate
+int pi();//100000 digits of PI
 
 //variables
 int key = 0;
@@ -37,7 +38,8 @@ int main_page()
 	printf("[2]Subtraction\n");
 	printf("[3]Multiplication\n");
 	printf("[4]Division\n");
-	printf("[5]Exit\n");
+	printf("[5] 100000 digits of PI");
+	printf("[6]Exit\n");
 
 	printf("Enter the key: ");
 	scanf_s("%d", &key);
@@ -58,6 +60,8 @@ int main_page()
 			division();
 			break;
 		case 5:
+			pi();
+		default:
 			return 0;
 	}
 	return 0;
@@ -103,6 +107,13 @@ int division()
 	scanf_s("%lld%lld", &a, &b);
 	printf("\n\n%lld and Remainder: %lld", a / b, a % b);
 	Sleep(2000);
+	main_page();
+	return 0;
+}
+
+int pi()
+{
+	system("start pi.txt");
 	main_page();
 	return 0;
 }
